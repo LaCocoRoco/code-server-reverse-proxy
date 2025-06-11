@@ -30,7 +30,7 @@ A request to `proxy.example.com/proxy/9000` will redirect to `9000.example.com`.
 
 ### Integration with Code Server & Wildcard Subdomain Handling
 
-This script is designed to be used in conjunction with Code Server. Configure Code Server to proxy requests to this script.To enable access via wildcard subdomains (e.g., `*.example.com`), configure your DNS to resolve all subdomain requests to the server running this script. The script then handles the URL rewriting and reverse proxying to the underlying applications.The following example demonstrates how a request to `proxy/<port>` is redirected to the wildcard subdomain: A request to `proxy.example.com/proxy/9000` is initially received by the server. The script then redirects the client to `9000.example.com`, effectively utilizing the wildcard DNS configuration.
+This script is designed to be used in conjunction with Code Server. Configure Code Server to proxy requests to this script.To enable access via wildcard subdomains (e.g., `*.example.com`), configure your DNS to resolve all subdomain requests to the server running this script. The script then handles the URL rewriting and reverse proxying to the underlying applications. The following example demonstrates how a request to `proxy/<port>` is redirected to the wildcard subdomain: A request to `proxy.example.com/proxy/9000` is initially received by the server. The script then redirects the client to `9000.example.com`, effectively utilizing the wildcard DNS configuration.
 
 ### Security Considerations
 
